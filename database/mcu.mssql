@@ -1,0 +1,216 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Creato il: Gen 30, 2022 alle 23:10
+-- Versione del server: 10.4.21-MariaDB
+-- Versione PHP: 8.1.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `mcu`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `account`
+--
+
+CREATE TABLE `account` (
+  `account_id` int(11) NOT NULL,
+  `username` varchar(128) NOT NULL,
+  `mail` varchar(128) NOT NULL,
+  `passwd` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dump dei dati per la tabella `account`
+--
+
+INSERT INTO `account` (`account_id`, `username`, `mail`, `passwd`) VALUES
+(1, 'AleDipa', 'aledipa.03@gmail.com', '$2y$10$ttpC7Y5ShqH3pg5/GjbmHeKmMS2VqNjGbOdCnzbIjwjg2Lhu/wZUS'),
+(2, 'Sussino', 'Sus@sus.com', '$2y$10$iNewpaPFuAcU5k.4PuWG..0FbIt..YyPMpK/Be6chGz01qv.KUMYW'),
+(3, 'Roberto', 'dipartimento@caccona.net', '$2y$10$UXIlvG.VxfGtn2EIeKUWrektRfHE1u8ZiiKGl/JGlaBL0SgEl4PYO'),
+(4, 'Matteo', 'sbrugnazione@cacabiscia.ovh', '$2y$10$SO5N9/OIecnoNT3n1zPo8.VjC/efiH7DjAjJlvoSg4JQx8LWET2eO'),
+(5, 'Luna Cicia', 'lunacoro@gmail.com', '$2y$10$6Grc0kNUFOzgXlf7V8E/7u1YYrWrI/AdzBaEbJsYTXNQv7t0FDBty');
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `featuring`
+--
+
+CREATE TABLE `featuring` (
+  `id_feature` int(11) NOT NULL,
+  `movie` int(11) NOT NULL,
+  `superhero` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dump dei dati per la tabella `featuring`
+--
+
+INSERT INTO `featuring` (`id_feature`, `movie`, `superhero`) VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 1),
+(4, 4, 3),
+(5, 5, 4),
+(6, 6, 1),
+(7, 6, 2),
+(8, 6, 3),
+(9, 6, 4),
+(10, 6, 5),
+(11, 6, 6),
+(12, 8, 1),
+(13, 9, 3),
+(14, 10, 4),
+(15, 11, 7),
+(16, 12, 1),
+(17, 12, 2),
+(18, 12, 4);
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `movies`
+--
+
+CREATE TABLE `movies` (
+  `id_movie` int(11) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `running_time` int(11) NOT NULL,
+  `release_date` date NOT NULL,
+  `director` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dump dei dati per la tabella `movies`
+--
+
+INSERT INTO `movies` (`id_movie`, `title`, `running_time`, `release_date`, `director`) VALUES
+(1, 'Iron Man', 126, '2008-05-02', 'Jon Favreau'),
+(2, 'The incredible Hulk', 126, '2008-06-13', 'Louis Leterrier'),
+(3, 'iron Man 2', 127, '2010-05-07', 'Jon Favreau'),
+(4, 'Thor', 114, '2011-05-06', 'Kenneth Branagh'),
+(5, 'Captain Americe the first Avenger', 124, '2011-07-22', 'Joe Johnston'),
+(6, 'Marvel s The Avengers', 143, '2012-05-04', 'Joss Whedon'),
+(8, 'Iron Man 3', 130, '2013-05-03', 'Shane Black'),
+(9, 'Thor: The Dark World', 112, '2013-11-08', 'Alan Taylor'),
+(10, 'Captain America: The Winter Soldier', 136, '2014-04-04', 'Anthony e Joe Russo'),
+(11, 'Guardiani della Galassia', 121, '2014-08-01', 'James Gunn'),
+(12, 'Avengers: Age of Ultron', 141, '2015-05-01', 'Joss Whedon'),
+(13, 'Ant-Man', 117, '2015-07-17', 'Peyton Reed'),
+(15, 'Captain America: Civil War', 147, '2016-05-06', 'Anthony e Joe Russo');
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `superheroes`
+--
+
+CREATE TABLE `superheroes` (
+  `id_superhero` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `powers` varchar(100) NOT NULL,
+  `power_ranking` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dump dei dati per la tabella `superheroes`
+--
+
+INSERT INTO `superheroes` (`id_superhero`, `name`, `powers`, `power_ranking`) VALUES
+(1, 'Iron Man', 'armatura, vola, ecc.', 8),
+(2, 'Hulk', 'super forza', 10),
+(3, 'Thor', 'dio del tuono', 10),
+(4, 'Captain America', 'Super forza, scudo in vibranio', 8),
+(5, 'Black Widow', 'agente segreta ', 6),
+(6, 'Hawk eye', 'agente segreto. arco e frecce', 6),
+(7, 'Star-Lord', 'furbo, scaltro', 1),
+(8, 'Ant-Man', 'diventa mini', 7);
+
+--
+-- Indici per le tabelle scaricate
+--
+
+--
+-- Indici per le tabelle `account`
+--
+ALTER TABLE `account`
+  ADD PRIMARY KEY (`account_id`);
+
+--
+-- Indici per le tabelle `featuring`
+--
+ALTER TABLE `featuring`
+  ADD PRIMARY KEY (`id_feature`),
+  ADD KEY `feature` (`superhero`),
+  ADD KEY `appearance` (`movie`);
+
+--
+-- Indici per le tabelle `movies`
+--
+ALTER TABLE `movies`
+  ADD PRIMARY KEY (`id_movie`);
+
+--
+-- Indici per le tabelle `superheroes`
+--
+ALTER TABLE `superheroes`
+  ADD PRIMARY KEY (`id_superhero`);
+
+--
+-- AUTO_INCREMENT per le tabelle scaricate
+--
+
+--
+-- AUTO_INCREMENT per la tabella `account`
+--
+ALTER TABLE `account`
+  MODIFY `account_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT per la tabella `featuring`
+--
+ALTER TABLE `featuring`
+  MODIFY `id_feature` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
+--
+-- AUTO_INCREMENT per la tabella `movies`
+--
+ALTER TABLE `movies`
+  MODIFY `id_movie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+
+--
+-- AUTO_INCREMENT per la tabella `superheroes`
+--
+ALTER TABLE `superheroes`
+  MODIFY `id_superhero` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
+--
+-- Limiti per le tabelle scaricate
+--
+
+--
+-- Limiti per la tabella `featuring`
+--
+ALTER TABLE `featuring`
+  ADD CONSTRAINT `appearance` FOREIGN KEY (`movie`) REFERENCES `movies` (`id_movie`),
+  ADD CONSTRAINT `feature` FOREIGN KEY (`superhero`) REFERENCES `superheroes` (`id_superhero`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

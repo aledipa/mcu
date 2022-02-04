@@ -1,0 +1,525 @@
+/* font-family: Marvel; */
+
+/* * {
+    background-color: black;
+} */
+
+body {
+    background-color: black !important;
+}
+
+.table td, .table th {
+    /* max-width: 7.5em; */
+    max-width: 7.5vw;
+    border-bottom: 1px solid #518CCA !important;
+    /* border-bottom: 2px solid #518CCA !important; */
+}
+
+.table td {
+    font-size: large !important;
+}
+
+.tableFields {
+    border-bottom: 2px solid #518CCA !important;
+}
+
+.blackBackground {
+    background-color: black !important;
+}
+
+.slimNavbar {
+    height: 4em;
+}
+
+.marvelText {
+    font-family: Marvel;
+    color: #E5E5E5;
+}
+
+.robotoText {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    color: #E5E5E5;
+}
+
+.smallText {
+    font-size: 0.6rem !important;
+}
+
+.mediumText {
+    font-size: 1.2rem !important;
+}
+
+.bigText {
+    font-size: 2rem !important;
+}
+
+.largeText {
+    font-size: 2.5rem !important;
+}
+
+.gigaText {
+    font-size: 4.5rem !important;
+}
+
+.mediumButton {
+    font-size: larger;
+    height: 2em;
+    width: 4em;
+}
+
+.accountButtons {
+    min-width: 11em;
+}
+
+.homePage {
+    background-color: black;
+    width: 100%;
+    min-width: 90em;
+}
+
+.title {
+    display: inline-block;
+    width: 35em;
+    margin-top: -15em;
+    padding-left: 3em;
+}
+
+.textButton {
+    color: white;
+}
+
+.textButton:hover {
+    color: #518CCA;
+    transition-duration: 0.5s;
+
+}
+
+.redButton {
+    color: #E5E5E5;
+    background-color: #E23636;
+    border: none;
+    border-radius: 6px;
+    outline: 0;
+}
+
+.redButton:hover {
+    background-color: red;
+    transition-duration: 0.5s;
+}
+
+.redText {
+    color: #E23636 !important;
+}
+
+.greenText {
+    color: #44E236 !important;
+}
+
+.azureText {
+    color: #D0E7FF !important;
+}
+
+.blueText {
+    color: #518CCA;
+}
+
+.azureDarkText {
+    color: #A3D0FF !important;
+}
+
+.azureLabel {
+    color: #6FB2F9 !important;
+}
+
+.grayText {
+    color: #E5E5E5 !important;
+}
+
+.grayDarkText {
+    color: #373434 !important;
+}
+
+.access {
+    background-image: url("../img/backgrounds/SignupBackground.jpeg");
+    background-color: black;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.accessAgain {
+    background-image: url("../img/backgrounds/LoginBackground.jpeg");
+    background-color: black;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: initial; */
+}
+
+.addmovie {
+    background-image: url("../img/backgrounds/addMovieBackground.jpeg");
+    background-color: black;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: initial; */
+}
+
+.addhero {
+    background-image: url("../img/backgrounds/addHeroBackground.jpeg");
+    background-color: black;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: initial; */
+}
+
+.findmovie {
+    background-image: url("../img/backgrounds/SearchBackground.jpeg");
+    background-color: black;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: initial; */
+}
+
+/* Glassmorphism card effect */
+.card {
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    -moz-backdrop-filter: blur(10px) saturate(200%);
+    -o-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.signupBox {
+    margin-top: 5em;
+    padding-top: 1em;
+    margin-bottom: 3em;
+    box-shadow: 4px 8px 20px #2481b82c;
+    border-radius: 12px !important;
+    width: 80%;
+    max-width: 55em;
+    min-width: 25em;
+    background-color: white;
+    animation-name: slide-in-fwd-top;
+    animation-duration: 1s;
+}
+
+.smallBox {
+    max-width: 35em !important;
+}
+
+.signfieldInput {
+    /* width: 80% !important; */
+    height: 3em;
+    color: #D0E7FF;
+    background-color: transparent;
+    border:none;
+    border-bottom: 3.5px solid #518CCA;
+    padding: 5px 10px;
+    outline: none;
+    outline: 0;
+}
+
+.addon {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.signfieldInput::placeholder {
+    font-style: italic;
+    font-size: 200;
+    color: #424f5e;
+}
+
+
+#arrow {
+    margin-left: 13em;
+    margin-top: 5em;
+}
+
+.buttonSection {
+    /* margin-top: -30em !important; */
+    margin-bottom: 15em;
+    z-index: 300 !important;
+
+}
+
+
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img{
+    cursor: pointer;
+    opacity: 40%;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img{
+    fill: #518CCA;
+    opacity: 100%;
+}
+
+[type=radio]::before + img{
+    fill: #518CCA;
+    opacity: 40% !important;
+}
+
+.queryTypes {
+    opacity: 85% !important;
+}
+
+.customTable {
+    /* font-size: 70%; */
+    font-size: 2vw;
+}
+
+.boxSized {
+    width: 95%;
+    max-width: 55em;
+}
+
+.user {
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 100px;
+    border: 1px solid rgb(137, 137, 137) !important;
+    /* color: #1D6B99; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 0 !important;
+}
+
+.user_char {
+    font-size: 2rem;
+    margin-top: 0.4em;
+    pointer-events: none;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #E23636;
+    transition-duration: 0.5s;
+}
+
+.user:hover {
+    border: 1px solid transparent !important;
+}
+
+.noTopBorder {
+    border-top: transparent !important;
+}
+
+.binButton {
+    width: 2em;
+    height: 2em;
+    background-color: transparent;
+    outline: 0 !important;
+    border: none;
+}
+
+/* Color animation */
+.bn-to-color.visible {
+    z-index: 0;
+    animation-delay: 0.3s;
+    animation: colorIn linear 4s;
+    -webkit-animation: colorIn linear 4s;
+    -moz-animation: colorIn linear 4s;
+    -o-animation: colorIn linear 4s;
+    -ms-animation: colorIn linear 4s;
+  }
+  
+  @keyframes colorIn {
+    0% {filter: grayscale(100%); z-index: 0 !important;}
+    100% {filter: grayscale(0%);}
+  }
+  
+  @-moz-keyframes colorIn {
+    0% {filter: grayscale(100%); z-index: 0 !important;}
+    100% {filter: grayscale(0%);}
+  }
+  
+  @-webkit-keyframes colorIn {
+    0% {filter: grayscale(100%); z-index: 0 !important;}
+    100% {filter: grayscale(0%);}
+  }
+  
+  @-o-keyframes colorIn {
+    0% {filter: grayscale(100%); z-index: 0 !important;}
+    100% {filter: grayscale(0%);}
+  }
+  
+  @-ms-keyframes colorIn {
+    0% {filter: grayscale(100%); z-index: 0 !important;}
+    100% {filter: grayscale(0%);}
+  }
+/* /// */
+
+
+/* Logout Button Animation */
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-30px);
+              transform: translateX(-30px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-30px);
+              transform: translateX(-30px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+/* /// */
+
+
+/* Popup form animation */
+.fade-in {
+	-webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+/* /// */
+
+/* Hero hover animation */
+.hover-container {
+    position: relative;
+  }
+  
+  .hover-target {
+    position: relative;
+  }
+  
+  .hover-popup {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 70%;
+    left: 5%;
+    width: 30ch;
+    margin: min(1rem, 20px);
+    font-size: .8rem;
+    background-color: #373434;;
+    border-radius: 8px;
+    padding: 1.5em;
+    z-index: 42;
+    transform: scale(0);
+    transition: transform 200ms ease;
+    transform-origin: 8.2% -10px;
+  }
+  
+  .hover-target:hover + .hover-popup,
+  .hover-target:focus + .hover-popup,
+  .hover-popup:hover{
+    transform: scale(1);
+  }
+  
+  .hover-popup :not(:first-child) {
+    margin-top: 1rem;
+  }
+  
+  .hover-popup span {
+    color: rgb(200, 20, 0);
+    font-weight: 700;
+  }
+  
+  .hover-popup::before {
+  /* This is the triangle/arrow */
+    content: '';
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #373434;
+    top: -10px;
+  }
+  
+  .hover-popup::after {
+    /* This is merely here to expand the hoverable area, as a buffer between the "Hover me" text and the popup. */
+    content: '';
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-delay: -1ms !important;
+      animation-duration: -1ms !important;
+      animation-iteration-count: 1 !important;
+      background-attachment: initial !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0s !important;
+      transition-delay: 0s !important;
+    }
+  }
+/* /// */

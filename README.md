@@ -1,6 +1,6 @@
 # MCU Website - README
 ## _Informazioni varie_
-Il sito è realizzato in stile marvel e tramite un design glassmorfico.
+Il sito è un progetto scolastico realizzato in stile Marvel e tramite un design glassmorfico.
 
 ## Tecnologie utilizzate
 
